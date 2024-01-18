@@ -1,7 +1,7 @@
--- SQL script that creates a table users
--- task 0 'We are all unique
+-- CREATE A TABLE users
+-- task 0 'we are all unique' ..
 CREATE TABLE IF NOT EXISTS `users` (
-	`id` INT PRIMARY KEY AUTOINCREMENT,
-	`email` VARCHAR(255) UNIQUE NOT NULL,
-	`name` VARCHAR(255)
+    `id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `email` VARCHAR(255) NOT NULL UNIQUE,
+    `name` VARCHAR(255)
 );
